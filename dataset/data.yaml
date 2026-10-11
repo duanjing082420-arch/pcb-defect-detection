@@ -1,0 +1,9 @@
+# PCB 电路板缺陷检测 - YOLOv8 数据配置
+# 类别: 1 个 (missing hole, 缺失孔)
+# train/val 用相对路径, 相对本文件所在目录(dataset/), 整体移动不会失效
+
+train: images/train
+val: images/val
+
+nc: 1
+names: ['missing hole']
