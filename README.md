@@ -1,5 +1,7 @@
 # PCB Defect Detection with YOLOv8n · 基于 YOLOv8 的 PCB 电路板缺陷检测
 
+**English —** An end-to-end industrial inspection project that detects **missing-hole defects on PCB boards** using YOLOv8n. I built the entire pipeline myself: image acquisition → annotation → augmentation design → training → evaluation → integration into a desktop application. On a self-built dataset (**394 images / 619 annotated boxes**), the model reaches **Precision 0.991 · Recall 1.000 · mAP@50 0.994** at **~1.1 ms per image** (RTX 4060 Laptop). Code, dataset, training artifacts and evaluation curves are all open-sourced and reproducible. See [Key Design Decisions](#-关键设计决策) for why vertical flip was disabled and how `best.pt` was selected.
+
 面向工业质检场景的 **PCB 缺失孔（missing hole）** 缺陷检测项目。
 自主完成全链路：图像采集 → 数据标注 → 增强策略设计 → 模型训练调优 → 指标评估 → 集成到桌面应用。
 
